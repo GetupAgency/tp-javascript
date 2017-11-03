@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice Javascript</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>TD Javascript : Les gladiateurs</h1>
+    <div class="content">
+        <div id="formulaire">
+            <div class="fighter">
+                <h2>Fighter 1</h2>
+                <div>
+                    <label>Nom</label>
+                    <input type="text" value="Ragnar" id="name1" placeholder="Name" required>
+                </div>
+                <div>
+                    <label>Santé</label>
+                    <input type="text" value="100" id="health1" placeholder="Health" required>
+                </div>
+                <div>
+                    <label>Force</label>
+                    <input type="text" value="15" id="strength1" placeholder="Strength" required>
+                </div>
+                <div>
+                    <label>Chance coup critique</label>
+                    <input type="text" value="20" id="criticalChance1" placeholder="Critical Chance" required>
+                </div>
+                <div>
+                    <label>Chance d'esquive</label>
+                        <input type="text" value="10" id="esquive1" placeholder="Esquive" required>
+                </div>
+                <div>
+                    <label>Armure</label>
+                    <input type="text" value="8" id="armor1" placeholder="Armor" required>
+                </div>
+            </div>
+
+            <div class="fighter">
+                <h2>Fighter 2</h2>
+                <div>
+                    <label>Nom</label>
+                    <input type="text" value="Vercingetorix" id="name2" placeholder="Name" required>
+                </div>
+                <div>
+                    <label>Santé</label>
+                    <input type="text" value="120" id="health2" placeholder="Health" required>
+                </div>
+                <div>
+                    <label>Force</label>
+                    <input type="text" value="11" id="strength2" placeholder="Strength" required>
+                </div>
+                <div>
+                    <label>Chance coup critique</label>
+
+                    <input type="text" value="0" id="criticalChance2" placeholder="Critical Chance" required>
+                </div>
+                <div>
+                    <label>Chance d'esquive</label>
+                            <input type="text" value="10" id="esquive2" placeholder="Esquive" required>
+                        </div>
+                <div>
+                    <label>Armure</label>
+
+                    <input type="text" value="6" id="armor2" placeholder="Armor" required>
+                </div>
+            </div>
+
+            <div class="start-fight">
+                <button id="submitForm">Start Fight</button>
+            </div>
+
+            <div id="error">
+
+            </div>
+        </div>
+
+        <div id="fight">
+            <h1>Combat</h1>
+            <table id="fight-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="th" id="fighter1" colspan="3">Player 1</th>
+                        <th class="th" id="fighter2" colspan="3">Player 2</th>
+                    </tr>
+                    <tr>
+                        <th>Round</th>                            
+                        <th>Player 1 Encaisse</th>
+                        <th>Player 1 Inflige</th>
+                        <th>Player 1 Reste</th>
+                        <th>Player 2 Encaisse</th>
+                        <th>Inflige</th>
+                        <th>Reste</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
